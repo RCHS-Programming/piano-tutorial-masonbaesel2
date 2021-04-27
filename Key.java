@@ -8,10 +8,13 @@ public class Key extends Actor
     /**
      * Create a new key.
      */
-    public Key(String keyName, String soundFile)
+    public Key(String keyName, String soundFile, String img1, String img2)
     {
         key = keyName;
         sound = soundFile;
+        upImage = "img1";
+        downImage = "img2";
+        
     }
 
     /**
