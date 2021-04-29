@@ -27,5 +27,15 @@ public class Piano extends World
         {
             addObject( new Key(whiteKeys[i], whiteNotes[i] + ".wav", "white-key.png", "white-key-down.png"), 54 + 63*i, 140);
         }
+    
+        for(int i=0;i<whiteKeys.length-1;i++)
+        {
+            if( ! blackKeys[i].equals(""))
+            {
+                Key key = new Key(blackKeys[i], blackNotes[i]+".wav","black-key.png","black-key-down.png");
+                addObject(key,85+(i*63),86)
+            }
+        }
     }
+    
 }
